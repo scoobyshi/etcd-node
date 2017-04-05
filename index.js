@@ -16,12 +16,11 @@ var instance = {
 var  servicekey = "/services/" + instance.host;
 
 // With default lease, keep alive 10s (thus if app killed, dies within 10s
-etcd.set(servicekey, JSON.stringify(instance), "client").then( () => {
+
+etcd.set(servicekey, JSON.stringify(instance), "client").then( async () => {
   console.log("Key Created.");
 
-  etcd.get(servicekey, "json").then( (value) => {
-    console.log("Service Key : ", value);
-  });
+  let value = await etcd.get(servicekey, "json");
+  console.log("Service Key : ", value);
 });
-
 

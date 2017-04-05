@@ -1,4 +1,4 @@
-Simple Node JS client for [etcd]: https://github.com/coreos/etcd
+Simple Node JS client for [etcd](https://github.com/coreos/etcd)
 
 # Getting Started
 1. npm install
