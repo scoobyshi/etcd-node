@@ -1,0 +1,17 @@
+{
+  "name": "etcd-node",
+  "version": "0.0.1",
+  "description": "Tester for EtcD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Scott Justason",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "node-etcd3": "^0.4.4",
+    "os": "^0.1.1"
+  }
+}
